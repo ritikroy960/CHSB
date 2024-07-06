@@ -1,9 +1,11 @@
 from telethon.sync import TelegramClient
 from telethon.sessions import StringSession
+from dotenv import load_dotenv
+import os
 
 # Replace these with your own values
-api_id = '1438953'
-api_hash = '96f1dcc409aa62f5762e8f75e57834d9'
+api_id = os.getenv('API_ID')
+api_hash = os.getenv('API_HASH')
 
 def main():
     print("Press Ctrl+C to stop this script")
